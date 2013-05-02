@@ -9,15 +9,15 @@
 
 <head>
     <meta charset="utf-8">
-
+    <meta http-equiv="content-type" content="text/html">
     <title>myContest - A Premium Wordpress Contest Plugin</title>
     <meta content="Welcome the the docs of myContest!" name="description">
     <meta content="Higher Ground Studio" name="author">
     <meta content="Higher Ground Studio" name="copyright">
     <meta content="Documenter v1.6 http://rxa.li/documenter" name="generator">
     <meta content="2013-05-01T00:00:00+02:00" name="date">
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <link href="css/documenter_style.min.css" media="all" rel="stylesheet">
+    
+    <link href="assets/css/documenter_style.min.css" media="all" rel="stylesheet">
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 
@@ -57,19 +57,19 @@
                     </li>
 
                     <li>
-                        <a href="#working_with_contests_how_to_add_entry">How to add entry</a>
+                        <a href="#working_with_contests_how_to_add_entry">Add entry</a>
                     </li>
 
                     <li>
-                        <a href="#working_with_contests_how_to_delete_entry">How to delete entry</a>
+                        <a href="#working_with_contests_how_to_delete_entry">Delete entry</a>
                     </li>
 
                     <li>
-                        <a href="#working_with_contests_how_to_re_order_entries">How to re-order entries</a>
+                        <a href="#working_with_contests_how_to_re_order_entries">Re-order entries</a>
                     </li>
 
                     <li>
-                        <a href="#working_with_contests_how_to_save_contest">How to save Contest</a>
+                        <a href="#working_with_contests_how_to_save_contest">Save contest</a>
                     </li>
 
                     <li>
@@ -79,7 +79,73 @@
             </li>
 
             <li>
-                <a href="#have_a_problem_or_need_more_help">Have a problem or need more help?</a>
+                <a href="#settings">Settings</a>
+                <ol>
+                    <li>
+                        <a href="#general-settings">General</a>
+                    </li>
+                    <li>
+                        <a href="#votestart-settings">Voting Start</a>
+                    </li>
+                    <li>
+                        <a href="#voteend-settings">Voting End</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li>
+                <a href="#css_sass">CSS/SASS</a>
+                <ol>
+                    <li>
+                        <a href="#minify_css">Minify CSS</a>
+                    </li>
+                    <li>
+                        <a href="#custom_css">Custom CSS</a>
+                    </li>
+                    <li>
+                        <a href="#sass_compass">SASS and COMPASS</a>
+                    </li>
+
+                </ol>
+            </li>
+
+            <li>
+                <a href="#javascript">Javascript</a>
+                <ol>
+                    <li>
+                        <a href="#minify_js">Minify JS</a>
+                    </li>
+                </ol>
+            </li>
+            
+            <li>
+                <a href="#updates">Updates</a>
+                <ol>
+                    <li>
+                        <a href="#receive_updates">Receive Updates</a>
+                    </li>
+                    <li>
+                        <a href="#install_updates">Install Updates</a>
+                    </li>
+                </ol>
+            </li>
+
+            <li>
+                <a href="#have_a_problem_or_need_more_help">Have a problem or need help?</a>
+            </li>
+            <li>
+                <a href="#advanced">Advanced</a>
+                <ol>
+                    <li>
+                        <a href="#shortcode_only">Shortcode only</a>
+                    </li>
+                    <li>
+                        <a href="#add_to_loop_disable">Add to loop disable</a>
+                    </li>
+                    <li>
+                        <a href="#change_voting_time">Change Voting Time</a>
+                    </li>
+                </ol>
             </li>
             <br/>
             <li>
@@ -94,13 +160,13 @@
         </ol>
 
         <div id="documenter_copyright">
-            Copyright Higher Ground Studio 2013<br>
-            made with the <a href="http://rxa.li/documenter">Documenter v1.6</a>
+            Copyright Higher Ground Studio 2013
         </div>
     </div>
 
     <div id="documenter_content">
         <section id="documenter_cover">
+
             <h1>myContest</h1>
 
             <h2>A Premium Wordpress Contest Plugin</h2>
@@ -120,6 +186,13 @@
                 <li>Email: <a href="mailto:kyle.king@highergroundstudio.com">kyle.king@highergroundstudio.com</a>
                 </li>
             </ul>
+            <a href="https://twitter.com/HighrGrndStudio" class="twitter-follow-button" data-show-count="false">Follow @HighrGrndStudio</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            
+            <br>
+
+            <iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Flikehighergroundstudio&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=80&amp;appId=204956766208133" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:25px;margin:10px 0;" allowTransparency="true"></iframe>
+
 
             <p>Welcome the the docs of myContest! Thank you for your purchase. Please remember to give myContest a <a href="http://codecanyon.net/downloads">5 star rating!</a></p>
         </section>
@@ -128,15 +201,14 @@
             <h3>Prerequisites</h3>
             <hr class="notop">
 
-            <ul style=
-            "margin: 0px 0px 22px; padding: 0px; border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25.1875px; vertical-align: baseline; color: rgb(35, 35, 35);">
-            <li style=
-            "margin: 0px; padding: 0px 0px 0px 25px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: inside;">
-                <span style="font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit;">Wordpress 3.00+</span></li>
+            <ul>
+                <li>
+                    Wordpress 3.00+
+                </li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 25px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: inside;">
-                PHP 5.1.0+</li>
+                <li>
+                    PHP 5.1.0+
+                </li>
             </ul>
         </section>
 
@@ -146,73 +218,67 @@
 
             <h4 id="install_using_zip">Using ZIP</h4>
 
-            <ol style=
-            "margin: 0px 0px 22px; padding: 0px; border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25.1875px; vertical-align: baseline; color: rgb(35, 35, 35);">
-            <li style=
-            "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                From the WordPress plugin menu click&nbsp;<em style=
-                "margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline;">Add
-                New</em>.</li>
+            <ol>
+                <li>
+                    From the WordPress plugin menu click Add New
+                    <img class="thumbnail" alt="Plugin Menu" src="assets/images/screenshots/plugin-menu.png">2
+                </li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                Click on&nbsp;<em style=
-                "margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline;">Upload</em>.</li>
+                <li>
+                    Click on Upload.
+                    <img class="thumbnail" alt="upload plugin" src="assets/images/screenshots/install_plugins.png">
+                </li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                Use the browse button to select the myContest zip file you downloaded from Codecanyon, then click on&nbsp;<em style=
-                "margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline;">Install
-                Now</em>.</li>
+                <li>
+                    Use the browse button to select the myContest zip file you downloaded from Codecanyon, then click on Install Now.
+                    <img class="thumbnail" alt="upload plugin" src="assets/images/screenshots/upload-zip.png">
+                </li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
+                <li>
                 The plugin will be uploaded to your blog and installed.</li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
+                <li>
                 Go to Plugins screen and find the myContest Plugin in the list.</li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                Click _Activate _ to activate it.</li>
+                <li>
+                    Click Activate to activate myContest.
+                    <img class="thumbnail" alt="activate plugin" src="assets/images/screenshots/activate-plugin.png">
+                </li>
             </ol>
 
             <h4 id="install_using_ftp">Using FTP</h4>
 
-            <p>&nbsp;</p>
+            <ol>
+                <li>
+                    Download myContest from Codecanyon.
+                    <img class="thumbnail" alt="download plugin" src="assets/images/screenshots/codecanyon_download_pointer.png">
+                </li>
 
-            <ol style=
-            "margin: 0px 0px 22px; padding: 0px; border: 0px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 25.1875px; vertical-align: baseline; color: rgb(35, 35, 35);">
-            <li style=
-            "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                Download myContest from Codecanyon to your desktop.</li>
+                <li>
+                    Extract the myContest folder.
+                </li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                Extract the myContest folder to your desktop.</li>
+                <li>
+                    With your favorite FTP program, upload the myContest folder to the wp-content/plugins folder in your WordPress directory online.
+                </li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                With your FTP program, upload the myContest folder to the&nbsp;<em style=
-                "margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline;">wp-content/plugins</em>&nbsp;folder
-                in your WordPress directory online.</li>
+                <li>
+                    Go to Plugins screen and find the myContest Plugin in the list.
+                </li>
 
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                Go to Plugins screen and find the myContest Plugin in the list.</li>
-
-                <li style=
-                "margin: 0px; padding: 0px 0px 0px 20px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline; list-style: decimal inside;">
-                Click&nbsp;<em style=
-                "margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-variant: inherit; line-height: inherit; vertical-align: baseline;">Activate</em>&nbsp;to
-                activate it.</li>
+                <li>
+                    Click Activate to activate it.
+                    <img class="thumbnail" alt="activate plugin" src="assets/images/screenshots/activate-plugin.png">
+                </li>
             </ol>
         </section>
 
         <section id="working_with_contests">
             <h3>Working with Contests</h3>
             <hr class="notop">
+
+            This screencast covers all of the Working with Contests sections.
+            <iframe class="thumbnail" width="640" height="360" src="http://www.youtube.com/embed/dq2zQXLTuqE?rel=0" frameborder="0" allowfullscreen></iframe>
 
             <h4 id="working_with_contests_create_a_contest">Create a Contest</h4>
 
@@ -224,39 +290,33 @@
                 <li>Then add your entries.</li>
             </ol>
 
-            <p>&nbsp;</p>
+            <h4 id="working_with_contests_how_to_add_entry">Add entry</h4>
 
-            <h4 id="working_with_contests_how_to_add_entry">How to add entry</h4>
-
-            <ul style="">
+            <ul>
                 <li>Click the Add New Entry Button on the left when you are on the Contest post edit page.</li>
             </ul>
 
-            <h4 id="working_with_contests_how_to_delete_entry">How to delete entry</h4>
+            <h4 id="working_with_contests_how_to_delete_entry">Delete entry</h4>
 
-            <p>&nbsp;</p>
-
-            <ul style="">
+            <ul>
                 <li>Click the delete icon on the top right of the entry. A confirmation dialog box will appear asking you confirm the delete.&nbsp;</li>
             </ul>
 
             <p class="warning">The entry will not actually be deleted until you save or update the contest post.</p>
 
-            <h4 id="working_with_contests_how_to_re_order_entries">How to re-order entries</h4>
+            <h4 id="working_with_contests_how_to_re_order_entries">Re-order entries</h4>
 
             <ul>
                 <li>Click and hold the move icon on the top right of the entry.</li>
             </ul>
 
-            <h4 id="working_with_contests_how_to_save_contest">How to save Contest</h4>
+            <h4 id="working_with_contests_how_to_save_contest">Save contest</h4>
 
             <ul>
                 <li>Click save or update in the Publish postbox on the right.</li>
             </ul>
 
             <h4 id="working_with_contests_field_definitions">Field Definitions</h4>
-
-            <p>&nbsp;</p>
 
             <ul>
                 <li>Author - The author of the entry</li>
@@ -269,33 +329,229 @@
             </ul>
         </section>
 
+        <section id="settings">
+            <h3>Settings</h3>
+            <hr class="notop">
+            <p>&nbsp;</p>
+            The can access all the settings by using the tabs.
+            <h4 id="general-settings">General</h4>
+                <ul>
+                    <li>
+                        Sort Entries - You can select to sort by highest votes first, lowest vote first, alphabetically by the title, reverse alphabetically by the title, alphabetically by the author, reverse alphabetically by the author, random, or not to sort at all. 
+                        <p class="info">This sorting will not reflect on the admin post page and will only reflect on the actual contest itself.</p>
+                    </li>
+                    <li>
+                        Stick this to the front page - If checked, the post will be placed at the top of the front page of posts, keeping it there until new posts are published. This is the same as a <a href="http://codex.wordpress.org/Sticky_Posts">sticky post</a>.
+                    </li>
+                    <li>
+                        Do not show number of votes - If checked, the number of votes will not show on this contest. Rather, it will say "Vote for this". 
+                    </li>
+                </ul>
+            <h4 id="votestart-settings">Voting Start</h4>
+                <ul>
+                    <li>
+                        Voting Starts on (UTC) - This the date and time that the contest will start (in <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>). 
+                        <ol>
+                            <li>Select the date input box. A calendar widget will come up that you can select from. You can also input directly using month/day/year (05/02/2013)</li>
+                            <li>Input the hours (24 hour format).</li>
+                            <li>Input the minutes.</li>
+                            <p class="info">If hours or minutes are not entered it default to midnight.</p>
+                        </ol>
+                    </li>
+                    <li>
+                        Text to display before voting starts - This is the text to display before voting starts. If the do not show entries before voting starts is checked, this will be the only thing displayed other than the content. HTML is allowed.
+                    </li>
+                    <li>
+                        Do not show entries before voting starts - Entries will not show until the contest starts.
+                    </li>
+                </ul>
+            <h4 id="voteend-settings">Voting End</h4>
+                <ul>
+                    <li>
+                        Voting ends on (UTC) - This the date and time that the contest will end (in <a href="http://en.wikipedia.org/wiki/Coordinated_Universal_Time">UTC</a>). 
+                        <ol>
+                            <li>Select the date input box. A calendar widget will come up that you can select from. You can also input directly using month/day/year (05/02/2013)</li>
+                            <li>Input the hours (24 hour format).</li>
+                            <li>Input the minutes.</li>
+                            <p class="info">If hours or minutes are not entered it default to midnight.</p>
+                        </ol>
+                    </li>
+                    <li>
+                        Text to display after voting ends - This is the text to display after voting ends. If the do not show entries after voting ends is checked, this will be the only thing displayed other than the content. HTML is allowed.
+                    </li>
+                    <li>
+                        Do not show entries after voting ends - Entries will not show after the contest ends.
+                    </li>
+                    <li>
+                        Show top ___ entries after voting ends - This will show only the top entered number of entries (ordered by highest votes first). Make sure that Do not show entries after voting ends is not checked to use this setting.
+                    </li>
+                </ul>
+        </section>
+
+        <section id="css_sass">
+            <h3>CSS/SASS</h3>
+            <hr class="notop">
+            <p>&nbsp;</p>
+            <h4 id="minify_css">Minify CSS</h4>
+            <div>
+                To turn on or off the loading of minified CSS
+                <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Open myContest.php in your favorite editor</li>
+                    <li><span class="turnon">To turn on:</span> make sure the css_min constant is like so: <pre>const css_min = true;</pre></li>
+                    <li><span class="turnoff">To turn off:</span> make sure the css_min constant is like so: <pre>const css_min = false;</pre></li>
+                </ol>
+            </div>
+
+            <h4 id="custom_css">Custom CSS</h4>
+            <div>
+                To use custom css that will not be overwritten follow these steps:
+                <ol>
+                    <li>Go to the myContest folder</li>
+                    <li>Go to /inc/stylesheets/ folder</li>
+                    <li>Copy and paste the myContest.css</li>
+                    <li>Rename the copy to myContest.custom.css</li>
+                    <p class="info">To use a minified version of the mycontest custom css, create a myContest.custom.min.css and <a href="#minify_css">turn css minify on</a>.</p>
+                </ol> 
+            </div>
+
+            <h4 id="sass_compass">SASS and Compass</h4>
+            <div>
+                myContest was created with <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>. It is completely your choice if you want to use SASS to change the CSS. You can just change the CSS directly and forget about the SASS all together as it is just a css pre-processor (more like a CSS shortcut).
+
+                <p class="info">To learn more about SASS check out the netuts+ mini series, <a href="http://net.tutsplus.com/sessions/mastering-sass/">Mastering SASS</a>.</p>
+            </div>
+        </section>
+
+        <section id="javascript">
+            <h3>Javascript</h3>
+            <hr class="notop">
+            <p>&nbsp;</p>
+            <h4 id="minify_js">Minify JS</h4>
+            <div>
+                To turn on or off the loading of minified javascript files
+                <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Open myContest.php in your favorite editor</li>
+                    <li>
+                        <span class="turnon">To turn on:</span>
+                        make sure the js_min constant is like so: 
+                        <pre>const js_min = true;</pre>
+                    </li>
+                    <li><span class="turnoff">To turn off:</span> make sure the js_min constant is like so: <pre>const js_min = false;</pre></li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="updates">
+            <h3>Updates</h3>
+            <hr class="notop">
+            <p>&nbsp;</p>
+            <h4 id="receive_updates">Receive updates</h4>
+            <div>
+                To receive updates you can do the following:
+                <ul>
+                    <li>
+                        Go to <a href="http://codecanyon.net/downloads">codecanyon.net/downloads</a> and select <span style="font-weight:bolder;color:#444;font-style: italic;">Get notified by email if this item is updated</span> under myContest. This will let you know if a update has been uploaded to Codecanyon.
+                    </li>
+                    <li>
+                        You can <a href="http://eepurl.com/yZz8v">subscribe to the updates newletter.</a>
+                    </li>
+                    <li>
+                        <a href="#documenter_cover">Like us on facebook</a> (<a href="https://www.facebook.com/likehighergroundstudio">direct link</a>)
+                    </li>
+                    <li>
+                        <a href="#documenter_cover">Follow us on twitter</a> (<a href="https://twitter.com/HighrGrndStudio">direct link</a>)
+                    </li>
+                </ul>
+            </div>
+            <h4 id="install_updates">Install Updates</h4>
+            <div>
+                <ol>
+                    <li>
+                        Download myContest update from Codecanyon.
+                        <img class="thumbnail" alt="download plugin" src="assets/images/screenshots/codecanyon_download_pointer.png">
+                    </li>
+
+                    <li>
+                        Extract the myContest folder.
+                    </li>
+
+                    <li>
+                        Go to Plugins screen and find the myContest Plugin in the list.
+                    </li>
+
+                    <li>
+                        Click Deactivate to deactivate myContest.
+                        <img class="thumbnail" alt="activate plugin" src="assets/images/screenshots/deactivate-plugin.png">
+                    </li>
+
+                    <li>
+                        With your favorite FTP program, upload the myContest folder to the wp-content/plugins folder in your WordPress directory online.
+                    </li>
+
+                    <li>
+                        Go to Plugins screen and find the myContest Plugin in the list.
+                    </li>
+
+                    <li>
+                        Click Activate to activate it.
+                        <img class="thumbnail" alt="activate plugin" src="assets/images/screenshots/activate-plugin.png">
+                    </li>
+                </ol>
+            </div>
+        </section>
+
         <section id="have_a_problem_or_need_more_help">
             <h3>Have a problem or need more help?</h3>
             <hr class="notop">
 
             <p>&nbsp;</p>
 
+            <img class="thumbnail" alt="New Issue" src="assets/images/screenshots/new-issue-github.jpg">
+
             <div>
-                Visit the <a href="https://github.com/highergroundstudio/myContest/issues">myContest Issue board</a>. Click the New Issue button to create a new issue. You can
+                Visit the <a href="https://github.com/highergroundstudio/myContest/issues">myContest Issue board</a>. Click the <span style="font-weight:bolder;color:#444;font-style: italic;">New Issue</span> button to create a new issue. You can
                 also search for other issues and many times there may be a solution already.&nbsp;
             </div>
 
             <p class="info">You must sign up for a free Github account to post a new issue.</p>
         </section>
+
+        <section id="advanced">
+            <h3>Advanced</h3>
+            <hr class="notop">
+            <p>&nbsp;</p>
+            Many of the topics below will be programmically inclined and may require some understanding of PHP or Javascript.
+            <h4 id="shortcode_only">Shortcode only</h4>
+            <div>
+               Shortcode only
+            </div>
+
+            <h4 id="add_to_loop_disable">Add to loop disable</h4>
+            <div>
+               Add to loop disable
+            </div>
+
+            <h4 id="change_voting_time">Change voting time</h4>
+            <div>
+               Change voting time
+            </div>
+        </section>
     </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-2.0.0.min.js"><\/script>')</script>
     <script>
 		document.createElement('section');
 		var duration=500,
 		easing='swing';
     </script>
-    <script src="js/app.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
     <script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
 	  ga('create', 'UA-6534095-9', 'github.io');
 	  ga('send', 'pageview');
