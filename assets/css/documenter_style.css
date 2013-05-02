@@ -165,7 +165,7 @@ noscript p{
 	font-size:12px;
 	font-weight:700;
 	min-height:150px;
-	height:75%;
+	height:100%;
 	overflow:auto;
 	border-top:1px solid #AAAAAA;
 }
