@@ -113,6 +113,9 @@
                 <a href="#javascript">Javascript</a>
                 <ol>
                     <li>
+                        <a href="#enable_disable_js_mini">Enable/Disable Minified JS</a>
+                    </li>
+                    <li>
                         <a href="#minify_js">Minify JS</a>
                     </li>
                 </ol>
@@ -140,7 +143,7 @@
                         <a href="#shortcode_only">Shortcode only</a>
                     </li>
                     <li>
-                        <a href="#add_to_loop_disable">Add to loop disable</a>
+                        <a href="#add_to_loop_disable">Disable Add to query (loop)</a>
                     </li>
                     <li>
                         <a href="#change_voting_time">Change Voting Time</a>
@@ -427,7 +430,7 @@
             <h3>Javascript</h3>
             <hr class="notop">
             <p>&nbsp;</p>
-            <h4 id="minify_js">Minify JS</h4>
+            <h4 id="enable_disable_js_mini">Enable/Disable Minified JS</h4>
             <div>
                 To turn on or off the loading of minified javascript files
                 <ol>
@@ -439,6 +442,33 @@
                         <pre>const js_min = true;</pre>
                     </li>
                     <li><span class="turnoff">To turn off:</span> make sure the js_min constant is like so: <pre>const js_min = false;</pre></li>
+                </ol>To turn on or off the loading of minified javascript files
+                <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Open myContest.php in your favorite editor</li>
+                    <li>
+                        <span class="turnon">To turn on:</span>
+                        make sure the js_min constant is like so: 
+                        <pre>const js_min = true;</pre>
+                    </li>
+                    <li><span class="turnoff">To turn off:</span> make sure the js_min constant is like so: <pre>const js_min = false;</pre></li>
+                </ol>
+            </div>
+            <h4 id="minify_js">Minify JS</h4>
+            <div>
+                Read about <a href="http://en.wikipedia.org/wiki/Minify">minification on Wikipedia</a>
+                <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Go to /inc/javascripts/ folder</li>
+                    <li>Open myContest-votes.js in your favorite editor</li>
+                    <li>
+                        Copy all of the js and paste into a minifier (suggested online tool: <a href="http://jsmini.com/">jsmini.com</a>) or use your own method.
+                        <p class="info">Presonally I use <a href="http://codecanyon.net/item/shrinkr-js-css-compressor/477610?sso?WT.ac=search_item&WT.seg_1=search_item&WT.z_author=JonasDoebertin&ref=HigherGroundStudio">shrinkr windows app</a> to minify both css and js. Just drag in your assets/inc folder and it does both creating a .min file.</p>
+                        <p class="info">For the Apple user there is the <a href="http://codecanyon.net/item/smaller/303476?sso?WT.ac=search_item&WT.seg_1=search_item&WT.z_author=chenluois&ref=HigherGroundStudio">Smaller app</a>. I have never tried this both it looks pretty close to <a href="http://codecanyon.net/item/shrinkr-js-css-compressor/477610?sso?WT.ac=search_item&WT.seg_1=search_item&WT.z_author=JonasDoebertin&ref=HigherGroundStudio">shrinkr</a></p>
+                    </li>
+                    <li>Delete the js in myContest-votes.min.js and paste in your minified js code</li>
+                    <li>Save and upload if necessary</li>
+                    <li>Make sure that <a href="#enable_disable_js_mini">minified js is enabled</a></li>
                 </ol>
             </div>
         </section>
@@ -525,17 +555,56 @@
             Many of the topics below will be programmically inclined and may require some understanding of PHP or Javascript.
             <h4 id="shortcode_only">Shortcode only</h4>
             <div>
-               Shortcode only
+               <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Open myContest.php in your favorite editor</li>
+                    <li>Go to the line: <pre>add_filter('the_content', array($this, 'content_display'));</pre></li>
+                    <li>
+                        <span class="turnoff">Disable:</span> comment out the line
+                        <pre class="php">//add_filter('the_content', array($this, 'content_display'));</pre>
+                    </li>
+                    <li>
+                        <span class="turnon">Enable:</span>
+                        make sure the line is uncommented
+                        <pre>add_filter('the_content', array($this, 'content_display'));</pre>
+                    </li>
+                    <li>Save and upload if necessary</li>
+                </ol>
             </div>
 
-            <h4 id="add_to_loop_disable">Add to loop disable</h4>
+            <h4 id="add_to_loop_disable">Disable Add to query (loop)</h4>
             <div>
-               Add to loop disable
+               <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Open myContest.php in your favorite editor</li>
+                    <li>Go to the line: <pre>add_action( 'pre_get_posts', array($this, 'add_to_query' ) );</pre></li>
+                    <li>
+                        <span class="turnoff">Disable:</span> comment out the line
+                        <pre class="php">//add_action( 'pre_get_posts', array($this, 'add_to_query' ) );</pre>
+                    </li>
+                    <li>
+                        <span class="turnon">Enable:</span>
+                        make sure the line is uncommented
+                        <pre>add_action( 'pre_get_posts', array($this, 'add_to_query' ) );</pre>
+                    </li>
+                    <li>Save and upload if necessary</li>
+                </ol>
             </div>
 
             <h4 id="change_voting_time">Change voting time</h4>
             <div>
-               Change voting time
+               <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Go to /inc/javascripts/ folder</li>
+                    <li>Open myContest-votes.js in your favorite editor</li>
+                    <li>Go to the line: <pre>var voteExpires = 86400000;</pre></li>
+                    <li>
+                        This is in milliseconds, so 1 day equals 86400000 milliseconds. Thus 1 hour would be 3600000 milliseconds.
+                    </li>
+                    <li>Example: To change to 1 hour, change the line to:<pre>var voteExpires = 3600000;</pre></li>
+                    <li>If using minified js (suggested). <a href="#minify_js">Follow the minifing javascript instructions above</a></li>
+                    <li>Save and upload if necessary</li>
+                </ol>
             </div>
         </section>
     </div>
