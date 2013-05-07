@@ -134,7 +134,19 @@
             </li>
 
             <li>
+                <a href="#localization">Localization</a>
+            </li>
+
+            <li>
                 <a href="#have_a_problem_or_need_more_help">Have a problem or need help?</a>
+                <ol>
+                    <li>
+                        <a href="#debug">Debug</a>
+                    </li>
+                    <li>
+                        <a href="#issue_board">Issue board</a>
+                    </li>
+                </ol>
             </li>
             <li>
                 <a href="#advanced">Advanced</a>
@@ -420,7 +432,9 @@
 
             <h4 id="sass_compass">SASS and Compass</h4>
             <div>
-                myContest was created with <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>. It is completely your choice if you want to use SASS to change the CSS. You can just change the CSS directly and forget about the SASS all together as it is just a css pre-processor (more like a CSS shortcut).
+                myContest was created with <a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>. Sass is a super-set of CSS. Any valid CSS code is valid Sass. But Sass adds author-friendly capabilities such as nesting, variables, arithmetic and mixins. And Sass gets compiled into regular CSS so its 100% compatible with all browsers. Compass is a library of reusable, pre-made Sass code. 
+                <br><br>
+                It is completely your choice if you want to use SASS to change the CSS. You can just change the CSS directly and forget about the SASS all together as it is just a css pre-processor (more like a CSS shortcut).
 
                 <p class="info">To learn more about SASS check out the netuts+ mini series, <a href="http://net.tutsplus.com/sessions/mastering-sass/">Mastering SASS</a>.</p>
             </div>
@@ -532,20 +546,53 @@
             </div>
         </section>
 
+        <section id="localization">
+            <h3>Localization</h3>
+            <hr class="notop">
+
+            <p>&nbsp;</p>
+            <div>
+                
+            </div>
+        </section>
+
         <section id="have_a_problem_or_need_more_help">
             <h3>Have a problem or need more help?</h3>
             <hr class="notop">
 
             <p>&nbsp;</p>
 
-            <img class="thumbnail" alt="New Issue" src="assets/images/screenshots/new-issue-github.jpg">
-
+            <h4 id="debug">Debug</h4>
             <div>
-                Visit the <a href="https://github.com/highergroundstudio/myContest/issues">myContest Issue board</a>. Click the <span style="font-weight:bolder;color:#444;font-style: italic;">New Issue</span> button to create a new issue. You can
-                also search for other issues and many times there may be a solution already.&nbsp;
+                First, try turning on myContest debug mode to see if there are any error codes. To turn on myContest debug:
+                <ol>
+                    <li>Go to the myContest plugin folder</li>
+                    <li>Open myContest.php in your favorite editor</li>
+                    <li>Go to the line: <pre>const debug = false;</pre></li>
+                    <li>
+                        <span class="turnon">To turn on:</span>
+                        make sure the debug constant is like so: 
+                        <pre>const debug = true;</pre>
+                    </li>
+                    <li>
+                        <span class="turnoff">To turn off:</span> make sure the js_min constant is like so: 
+                        <pre>const debug = false;</pre>
+                    </li>
+                    <li>Any errors will show up on the myContes admin pages only. Not on the frontside.</li>
+                    <li>
+                        If this does not show any errors you can make sure that there are no php or wordpress errors by turning on wp-debug. Follow the <a href="http://codex.wordpress.org/Debugging_in_WordPress" title="Debugging in Wordpress">instruction on the Wordpress Codex</a>.
+                    </li>
+                </ol>
             </div>
 
-            <p class="info">You must sign up for a free Github account to post a new issue.</p>
+            <h4 id="issue_board">Issue board</h4>
+            <div>
+                Visit the <a href="https://github.com/highergroundstudio/myContest/issues">myContest Issue board</a>. Click the <span style="font-weight:bolder;color:#444;font-style: italic;">New Issue</span> button to create a new issue. You can
+                also search for other issues, many times there may be a solution already.
+                <img class="thumbnail" alt="New Issue" src="assets/images/screenshots/new-issue-github.jpg">
+            </div>
+
+            <p class="info">You must sign up for a <a href="https://github.com/signup/free" title="Github sign up">free Github account</a> to post a new issue.</p>
         </section>
 
         <section id="advanced">
