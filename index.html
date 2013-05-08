@@ -158,6 +158,9 @@
                         <a href="#add_to_loop_disable">Disable Add to query (loop)</a>
                     </li>
                     <li>
+                        <a href="#contests_not_showing">Contests not showing with other posts</a>
+                    </li>
+                    <li>
                         <a href="#change_voting_time">Change Voting Time</a>
                     </li>
                 </ol>
@@ -641,6 +644,30 @@
                     <li>Save and upload if necessary</li>
                 </ol>
             </div>
+
+            <h4 id="contests_not_showing">Contests not showing with other posts</h4>
+            <div>
+                Many times this can be a theme using the <a href="http://codex.wordpress.org/Function_Reference/query_posts" title="query_posts">query_posts() function</a> rather than <a href="http://codex.wordpress.org/The_Loop" title="The loop">the loop</a>. You need to add the myContest post type, "my_contest" to the query_posts arguments.
+               <ol>
+                    <li>Go to your current theme folder ( it may be a good idea to <a href="http://codex.wordpress.org/Child_Themes" title="Child theme">use a child theme</a> so updates do not override this)</li>
+                    <li>Open the php file that holds the main index template (most of the time index.php) in your favorite editor</li>
+                    <li>Find: <pre>query_posts();</pre></li>
+                    <li>
+                        Add 'my_contest' after 'post' in the 'post_type' argument like so:
+                        <pre>$args = array(
+    'post_type' => array('post', 'my_contest'),
+    'posts_per_page' => 12,
+    'cat' => '-' . $category_ID,
+    'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1)
+);    
+    
+query_posts($args);</pre>
+                    </li>
+                    <li>Save and upload if necessary</li>
+                </ol>
+            </div>
+
+
 
             <h4 id="change_voting_time">Change voting time</h4>
             <div>
