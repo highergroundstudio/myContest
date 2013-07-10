@@ -1,2 +1,4 @@
 Localization
 Debug
+
+# Make edits not overwritten by updates
