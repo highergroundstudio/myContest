@@ -1,0 +1,307 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: myContest\n"
+"POT-Creation-Date: 2013-05-11 13:29-0700\n"
+"PO-Revision-Date: 2013-05-11 13:29-0700\n"
+"Last-Translator: Kyle King <kyle.king@highergroundstudio.com>\n"
+"Language-Team: Higher Ground Studio <kyle.king@highergroundstudio.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_n;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+#: ../../myContest.php:124 ../../myContest.php:125
+msgid "Add New Contest"
+msgstr ""
+
+#: ../../myContest.php:126
+msgid "Edit Contest"
+msgstr ""
+
+#: ../../myContest.php:127
+msgid "New Contest"
+msgstr ""
+
+#: ../../myContest.php:128
+msgid "All Contests"
+msgstr ""
+
+#: ../../myContest.php:129
+msgid "View Contest"
+msgstr ""
+
+#: ../../myContest.php:130
+msgid "Search Contests"
+msgstr ""
+
+#: ../../myContest.php:131
+msgid "No Contests found"
+msgstr ""
+
+#: ../../myContest.php:132
+msgid "No Contests found in Trash"
+msgstr ""
+
+#: ../../myContest.php:168
+msgid "Entries"
+msgstr ""
+
+#: ../../myContest.php:473
+msgid "Permissions check failed"
+msgstr ""
+
+#: ../../myContest.php:626
+msgid "You have already voted for today"
+msgstr ""
+
+#: ../../myContest.php:627
+msgid "Your vote was not successful. Please Try Again."
+msgstr ""
+
+#: ../../myContest.php:628 ../../inc/views/content.php:224
+#: ../../inc/views/content.php:241
+msgid "votes"
+msgstr ""
+
+#: ../../inc/views/content.php:217 ../../inc/views/content.php:234
+msgid "Click to vote for this"
+msgstr ""
+
+#: ../../inc/views/content.php:220 ../../inc/views/content.php:237
+msgid "Vote for this"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:8
+#: ../../inc/views/entries_meta_boxes.php:104
+msgid "Title"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:9
+#: ../../inc/views/entries_meta_boxes.php:25
+#: ../../inc/views/entries_meta_boxes.php:33
+#: ../../inc/views/entries_meta_boxes.php:41
+#: ../../inc/views/entries_meta_boxes.php:61
+#: ../../inc/views/entries_meta_boxes.php:105
+#: ../../inc/views/entries_meta_boxes.php:113
+#: ../../inc/views/entries_meta_boxes.php:121
+#: ../../inc/views/entries_meta_boxes.php:129
+#: ../../inc/views/entries_meta_boxes.php:149
+msgid "A description for the field."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:24
+#: ../../inc/views/entries_meta_boxes.php:112
+msgid "Author"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:32
+#: ../../inc/views/entries_meta_boxes.php:120
+msgid "Url"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:40
+#: ../../inc/views/entries_meta_boxes.php:128
+msgid "Votes"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:48
+#: ../../inc/views/entries_meta_boxes.php:136
+msgid "Description/other (html allowed)"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:49
+#: ../../inc/views/entries_meta_boxes.php:137
+msgid "Description for entry."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:60
+#: ../../inc/views/entries_meta_boxes.php:148
+msgid "Photo"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:71
+msgid "Add New Entry"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:76
+msgid ""
+"This entry will be permanently deleted and cannot be recovered if you save. "
+"Are you sure?"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:79
+msgid "It is lonely here."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:79
+msgid "Add a entry by clicking Add New Entry above."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:195
+msgid "General"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:196
+msgid "Voting Start"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:197
+msgid "Voting End"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:198
+msgid "Help"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:204
+msgid "Sort entries:"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:206
+msgid "Don't Sort"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:207
+msgid "Highest Votes First"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:208
+msgid "Lowest Votes First"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:209
+msgid "Title A-Z"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:210
+msgid "Title Z-A"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:211
+msgid "Author A-Z"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:212
+msgid "Author Z-A"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:213
+msgid "Random"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:219
+msgid "Stick this to the front page"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:226
+msgid "Do not show number of votes"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:235
+msgid "Login"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:235
+msgid "You must login to vote"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:242
+msgid "Logged-in users can only vote"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:248
+msgid "Do not show entries to non logged-in users"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:251
+msgid "Text to display to non logged in users (HTML allowed)"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:251
+msgid "Your login url is: "
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:261
+msgid "Voting Starts on (UTC)"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:267
+msgid "Text to display before voting starts"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:273
+msgid "Do not show entries before voting starts"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:278
+msgid "Voting Ends on (UTC)"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:284
+msgid "Text to display after voting ends"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:290
+msgid "Do not show entries after voting ends"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:293
+msgid "Show top"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:295
+msgid " entries after voting ends."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:300
+msgid "Need help?"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:302
+msgid ""
+"Visit the <a href=\"http://highergroundstudio.github.io/myContest/\" title="
+"\"myContest Documentation\">myContest Documentation</a> site."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:304
+msgid "Have a problem?"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:306
+msgid ""
+"Visit the <a href=\"https://github.com/highergroundstudio/myContest/issues\" "
+"title=\"Issue board\">myContest Issue Board</a>."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:307
+msgid ""
+"Click the New Issue button to create a new issue. You can also search for "
+"other issues and many times there may be a solution already."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:309
+msgid ""
+"Note: You must sign up for a <a href=\"https://github.com/signup/free\" "
+"title=\"Github account sign up\">free Github account</a> to post a new issue."
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:323
+msgid "Delete"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:324
+msgid "Move"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:373
+msgid "Edit"
+msgstr ""
+
+#: ../../inc/views/entries_meta_boxes.php:374
+msgid "Remove"
+msgstr ""
