@@ -1,12 +1,11 @@
 <?php
 /*
 Plugin Name: myContest
-Plugin URI: https://github.com/highergroundstudio/myContest
+Plugin URI: http://codecanyon.net/item/mycontest-contest-plugin-for-wordpress/4683159?ref=HigherGroundStudio
 Plugin Docs: http://highergroundstudio.github.io/myContest/
-Description: A Premium Wordpress Contest plugin
-Version: 2.0.11
+Description: A Wordpress Contest plugin
+Version: 2.0.12
 Author: Higher Ground Studio
-Author Email: kyle.king@highergroundstudio.com 
 Text Domain: mycontest
 */
 
@@ -74,7 +73,7 @@ class myContest {
 	/*
 	 * the current version
 	 */
-	var $version = '2.0.11';
+	var $version = '2.0.12';
 	/*
 	 * Plugin PATH var setup
 	 */
@@ -196,21 +195,7 @@ class myContest {
 			
 			// Include and setup our settings class
 			require( $this->pluginPath . '/inc/classes/settings.php' );
-			$this->settings = new myContest_settings($this->purchase_code);
-
-			// Don't load this if update disable is enabled
-			if(!$this->update_disable):
-				// Include and setup our updateCheck class
-				require( $this->pluginPath . '/inc/classes/updateCheck.php' );
-				$this->updateCheck = new myContest_updateCheck(
-					$this->version,
-					// 'http://127.0.0.1/myContest%20update%20server/update.php', // local testing
-					'http://mycontest.highergroundstudio.com/update-api/update.php', // production
-					plugin_basename(__FILE__),
-					$this->purchase_code,
-					$this->beta_tester
-				);
-			endif; // end update  disable
+			$this->settings = new myContest_settings();
 
 			// Setup notices if in debug mode
 			if($this->debug) include( $this->pluginPath . '/inc/admin/id-admin-notices.php' );

@@ -48,14 +48,6 @@ class myContest_settings{
 		add_settings_field('mc_shortcode_support', __('Disable Shortcode?','mycontest'), array($this,'shortcode_support_render'), $sectionid, 'mycontest_general_settings');
 		add_settings_field('mc_query_support', __('Disable Add to Query (will not show in the loop)?','mycontest'), array($this,'query_support_render'), $sectionid, 'mycontest_general_settings');
 		add_settings_field('mc_mycontest_powered', __('Disable Powered by myContest icon?','mycontest'), array($this,'mycontest_powered_render'), $sectionid, 'mycontest_general_settings');
-		
-
-		// Updates Section
-		$sectionid = 'mycontest_settings_updates';
-		add_settings_section('mycontest_updates_settings', __('Update Settings','mycontest'), array($this,'mycontest_updates_section_text'), $sectionid);
-		add_settings_field('mc_purchase_code', __('Purchase code','mycontest'), array($this,'purchase_code_render'), $sectionid, 'mycontest_updates_settings');
-		add_settings_field('mc_beta_tester', __('I want to be a myContest Beta tester','mycontest'), array($this,'beta_tester_render'), $sectionid, 'mycontest_updates_settings');
-		add_settings_field('mc_update_disable', __('Disable updates?','mycontest'), array($this,'update_disable_render'), $sectionid, 'mycontest_updates_settings');
 	}
 	/**
 	 * Settings page render
@@ -203,57 +195,6 @@ class myContest_settings{
 		?>
 			<input id="mycontest_powered" name="mycontest_settings[mycontest_powered]" type="checkbox" value="1" 
 			<?php if(!empty($this->settings['mycontest_powered'])) checked( $this->settings['mycontest_powered'] ); ?>>
-		<?php
-	}
-	/**
-	 * Description for updates section
-	 *
-	 * @author  Kyle King <kyle.king@highergroundstudio.com>
-	 * @since 1.2.8
-	 * @return void
-	 */
-	function mycontest_updates_section_text(){
-		
-	}
-	/**
-	 * Field render function
-	 *
-	 * @author  Kyle King <kyle.king@highergroundstudio.com>
-	 * @since 1.2.8
-	 * @return void
-	 */
-	function beta_tester_render(){
-		// Disable Powered by myContest
-		?>
-			<input id="beta_tester" name="mycontest_settings[beta_tester]" type="checkbox" value="1" 
-			<?php if(!empty($this->settings['beta_tester'])) checked( $this->settings['beta_tester'] ); ?>>
-		<?php
-	}	
-	/**
-	 * Field render function
-	 *
-	 * @author  Kyle King <kyle.king@highergroundstudio.com>
-	 * @since 1.2.8
-	 * @return void
-	 */
-	function update_disable_render(){
-		// Disable Powered by myContest
-		?>
-			<input id="update_disable" name="mycontest_settings[update_disable]" type="checkbox" value="1" 
-			<?php if(!empty($this->settings['update_disable'])) checked( $this->settings['update_disable'] ); ?>>
-		<?php
-	}
-	/**
-	 * Field render function
-	 *
-	 * @author  Kyle King <kyle.king@highergroundstudio.com>
-	 * @since 1.2.8
-	 * @return void
-	 */
-	function purchase_code_render(){
-		// Disable Powered by myContest
-		?>
-			<input id="purchase_code" name="mycontest_settings[purchase_code]" type="text" value="<?php if(!empty($this->settings['purchase_code'])) echo $this->settings['purchase_code']; ?>">
 		<?php
 	}
 } // end class
